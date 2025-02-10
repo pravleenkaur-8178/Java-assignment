@@ -23,8 +23,8 @@ class OverloadingExample {
 
     public static void main(String[] args) {
         OverloadingExample obj = new OverloadingExample();
-        obj.display(5);      // Calls the integer version
-        obj.display("Hello");  // Calls the string version
+        obj.display(5);      // Calls the integer method
+        obj.display("Hello");  // Calls the string method
     }
 }
 ```
@@ -43,14 +43,14 @@ ex-
 ```
 class Animal {
     void sound() {
-        System.out.println("Animal makes a sound.");
+        System.out.println("animal makes a sound.");
     }
 }
 
 class Dog extends Animal {
     @Override
     void sound() {
-        System.out.println("Dog barks.");
+        System.out.println("dog barks.");
     }
 
     public static void main(String[] args) {
@@ -58,7 +58,7 @@ class Dog extends Animal {
         animal.sound();  // Calls Animal's method
 
         Animal dog = new Dog();
-        dog.sound();  // Calls Dog's overridden method
+        dog.sound();  // Calls Dog's method
     }
 }
 ```
