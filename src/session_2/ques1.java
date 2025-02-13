@@ -1,39 +1,42 @@
 package session_2;
 
+// Check if the first number is greater than the second
 @FunctionalInterface
-interface MyFunctionalInterface {
-    //check if first number is greater than second
+interface Compare {
     boolean isGreaterThan(int a, int b);
-
-    //increment number by 1
-    default int increment(int a) {
-        return a + 1;
     }
 
-    //concatenate two strings
-    default String concatStrings(String a, String b) {
-        return a + b;
+// Increment number by 1
+@FunctionalInterface
+interface Increment{
+    int incrementBy1(int a);
     }
 
-    //convert a string to uppercase
-    default String toUpperCase(String str) {
-        return str.toUpperCase();
+// Concatenate two strings
+@FunctionalInterface
+interface Concatenate {
+    String concatStrings(String a, String b);
     }
-}
+
+// Convert a string to uppercase
+@FunctionalInterface
+interface Uppercase {
+    String toUpperCase(String a);
+    }
+
 
 public class ques1 {
     public static void main(String[] args) {
-        MyFunctionalInterface greaterThan = (a, b) -> a > b;
-        System.out.println("Is 10 greater than 5? " + greaterThan.isGreaterThan(10, 5));
+        Compare comp = (a, b) -> a > b;
+        System.out.println("Is 10 greater than 5? " + comp.isGreaterThan(10, 5));
 
-        MyFunctionalInterface increment = (a, b) -> a > b;
-        System.out.println("Incremented value of 5: " + increment.increment(5));
+        Increment inc = (a) -> a + 1;
+        System.out.println("Incremented value of 5: " + inc.incrementBy1(5));
 
-        MyFunctionalInterface concat = (a, b) -> a > b;
-        System.out.println("concatenate string: " + concat.concatStrings("hello", " world"));
+        Concatenate con = (a, b) -> a + b;
+        System.out.println("Concatenate string: " + con.concatStrings("hello", "world"));
 
-        MyFunctionalInterface upperCase = (a, b) -> a > b;
-        System.out.println("uppercase string: " + upperCase.toUpperCase("pravleen"));
-    }
+        Uppercase up = (a) -> a.toUpperCase();
+        System.out.println("Uppercase string: " + up.toUpperCase("pravleen"));
+   }
 }
-
