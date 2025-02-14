@@ -2,7 +2,7 @@ package session_3;
 
 import java.util.*;
 
-public class ques4 {
+public class Ques5 {
     public static void main(String[] args) {
         //create a HashMap
         HashMap<String, Integer> map = new HashMap<>();
@@ -23,7 +23,7 @@ public class ques4 {
             sortedMap.put(entry.getKey(), entry.getValue());
         }
 
-        // Step 5: Print the sorted map
+        //print the sorted map
         for (Map.Entry<String, Integer> entry : sortedMap.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }

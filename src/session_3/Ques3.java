@@ -32,7 +32,7 @@ class Emp {
     }
 }
 
-public class ques3 {
+public class Ques3 {
     public static void main(String[] args) {
         Map<Emp, Double> employeeSalaryMap = new HashMap<>();
         employeeSalaryMap.put(new Emp("John Doe", 30, "Developer"), 50000.0);

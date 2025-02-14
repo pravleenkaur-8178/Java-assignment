@@ -23,7 +23,7 @@ class Employee implements Comparable<Employee> {
         }
     }
 
-public class ques2 {
+public class Ques2 {
     public static void main(String[] args) {
            List<Employee> employees = new ArrayList<>();
         employees.add(new Employee("John Doe", 30.0, 50000.0));
