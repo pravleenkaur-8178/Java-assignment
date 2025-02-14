@@ -23,7 +23,7 @@ public class Ques5 {
             sortedMap.put(entry.getKey(), entry.getValue());
         }
 
-        //print the sorted map
+        //print the map
         for (Map.Entry<String, Integer> entry : sortedMap.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
