@@ -8,7 +8,6 @@ Method overloading may or may not require inheritance.
 
 Private and final methods can be overloaded.
 
-Method overloading is a compile-time polymorphism.
 
 ex-
 ```
@@ -36,8 +35,6 @@ It occurs between a parent and child class.
 Method overriding always needs inheritance.
 
 Private and final methods can’t be overridden.
-
-Method overriding is a run-time polymorphism.
 
 ex-
 ```
